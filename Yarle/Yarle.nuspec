@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>org.flamerat.Yarle</id>
-    <version>1.0.1.1</version>
+    <version>1.0.2.2</version>
     <title>YARLE - Yet Another Random LINQ Extension</title>
     <authors>FlameRat</authors>
     <owners>FlameRat</owners>
@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/wzx1996/Yarle</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A set of functions that is compatible with LINQ to hopefully make life a bit easier. Though mostly just me dreaming of the features I want in LINQ though.</description>
-    <releaseNotes>First release</releaseNotes>
+    <releaseNotes>Generated documents</releaseNotes>
     <copyright>Copyright 2017 FlameRat</copyright>
     <tags>C# LINQ</tags>
   </metadata>

@@ -1,6 +1,6 @@
 ### YARLE - Yet Anothre Random LINQ Extension
 
-[NuGet page](https://www.nuget.org/packages/org.flamerat.Yarle/1.0.1.1)
+[NuGet page](https://www.nuget.org/packages/org.flamerat.Yarle/)
 
 This is a collection of LINQ functions that I dreamed of having, and now I don't have to dream.
 
