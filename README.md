@@ -2,6 +2,8 @@
 
 [NuGet page](https://www.nuget.org/packages/org.flamerat.Yarle/)
 
+LINQPad samples included - this means you can use this package in the free version of [LINQPad](https://www.linqpad.net/). 
+
 This is a collection of LINQ functions that I dreamed of having, and now I don't have to dream.
 
 All the functions are coded in a way to make use of LINQ as much as possible, thus hopefully
