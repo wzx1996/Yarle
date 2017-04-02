@@ -31,8 +31,12 @@ namespace org.flamerat.Yarle {
         /// <returns></returns>
         public static IEnumerable<T> InfiniteList<T>(Func<T, T> generator, T first) {
             T last = first;
+            T current;
             yield return first;
-            while (true) yield return last = generator(first);
+            while (true) {
+                yield return current = generator(last);
+                last = current;
+            }
         }
 
         /// <summary>

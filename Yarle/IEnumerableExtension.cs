@@ -95,17 +95,17 @@ namespace org.flamerat.Yarle {
             int column = collection.Select(x => x.Count()).Max();
             int row = collection.Count();
             T[,] result = new T[row, column];
-            var collectionEnumerator = collection.GetEnumerator();
             int i = 0;
             int j = 0;
-            do {
-                var elementEnumerator = collectionEnumerator.Current.GetEnumerator();
-                do {
-                    result[i, j] = elementEnumerator.Current;
+
+            foreach(var element in collection) {
+                foreach(var value in element) {
+                    result[i, j] = value;
                     j++;
-                } while (elementEnumerator.MoveNext());
+                }
                 i++;
-            } while (collectionEnumerator.MoveNext());
+                j = 0;
+            }
             return result;
         }
 

@@ -62,7 +62,8 @@ namespace org.flamerat.Yarle
         /// <param name="to"></param>
         /// <returns></returns>
         public static IEnumerable<int> Cardinal(int from, int to) {
-            for (int i = from; i <= to; i++) yield return i;
+            if (from > to) for (int i = from; i >= to; i--) yield return i;
+            else for (int i = from; i <= to; i++) yield return i;
         }
 
         /// <summary>
@@ -73,7 +74,8 @@ namespace org.flamerat.Yarle
         /// <param name="step"></param>
         /// <returns></returns>
         public static IEnumerable<int> Cardinal(int from, int to, int step) {
-            for (int i = from; i <= to; i += step) yield return i;
+            if(step<0) for (int i = from; i >= to; i += step) yield return i;
+            else for (int i = from; i <= to; i += step) yield return i;
         }
 
         /// <summary>
@@ -84,7 +86,8 @@ namespace org.flamerat.Yarle
         /// <param name="step"></param>
         /// <returns></returns>
         public static IEnumerable<double> Cardinal(double from, double to, double step) {
-            for (double i = from; i <= to; i += step) yield return i; 
+            if (step < 0) for (double i = from; i >= to; i += step) yield return i;
+            else for (double i = from; i <= to; i += step) yield return i; 
         }
 
         /// <summary>
@@ -96,6 +99,9 @@ namespace org.flamerat.Yarle
             public IntInt(int x,int y) {
                 X = x;
                 Y = y;
+            }
+            public override string ToString() {
+                return string.Format("({0}, {1})", X, Y);
             }
         }
 
